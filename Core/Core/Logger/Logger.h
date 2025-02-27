@@ -16,6 +16,7 @@ private:
 
 #define LOG_WITH_DETAILS(logger, level, ...) logger->log(spdlog::source_loc{__FILE__, __LINE__, SPDLOG_FUNCTION}, level, __VA_ARGS__)
 
+
 #if _DEBUG
 	#define CORE_LOG_TRACE(...) LOG_WITH_DETAILS(Logger::GetCoreLogger(), spdlog::level::trace, __VA_ARGS__)
 	#define CORE_LOG_DEBUG(...) LOG_WITH_DETAILS(Logger::GetCoreLogger(), spdlog::level::debug, __VA_ARGS__)

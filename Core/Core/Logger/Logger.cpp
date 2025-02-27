@@ -7,8 +7,7 @@ std::shared_ptr<spdlog::logger> Logger::CoreLogger = nullptr;
 std::shared_ptr<spdlog::logger> Logger::ClientLogger = nullptr;
 
 void Logger::Init() {
-        // Example: [22:40:00] [VIEngine::Logger:Init:11] [VIEngine] [Thread:1000] Logger works
-        spdlog::set_pattern("%^[%H:%M:%S] [%!:%#] [%n] [Thread:%t] %v%$");
+        spdlog::set_pattern("[%T] %^[%l]%$ [%n]: %v ");
 
         CoreLogger = spdlog::stdout_color_mt("CoreLib");
         CoreLogger->set_level(spdlog::level::trace);

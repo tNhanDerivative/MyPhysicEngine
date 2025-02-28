@@ -1,3 +1,6 @@
 [submodule "Core/Vendors/glfw"]
 	path = Core/Vendors/glfw
 	url = git@github.com:glfw/glfw.git
+[submodule "CppAppCore"]
+	path = CppAppCore
+	url = git@github.com:tNhanDerivative/CppAppCore.git

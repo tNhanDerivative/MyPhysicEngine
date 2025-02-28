@@ -8,5 +8,5 @@ endif()
 
 project ("GameEngine")
 
-add_subdirectory(Core)
-add_subdirectory(ClientApp)
+add_subdirectory(CppAppCore)
+add_subdirectory(PhysicsEngine)
